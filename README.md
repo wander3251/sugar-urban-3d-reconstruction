@@ -1,6 +1,10 @@
 # SuGaR Urban 3D Reconstruction
 
-Reproduction of the **SuGaR (Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering)** method (CVPR 2024) using a custom dataset composed of urban monuments.
+<p align="center">
+  <img src="images/pipeline.png" width="850">
+</p>
+
+An academic reproduction of the SuGaR (Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering) method proposed at CVPR 2024 using a custom dataset composed of urban monuments and objects.
 
 This project was developed as part of the Computer Graphics course and aims to reproduce the original methodology while replacing the authors' dataset with photographs collected by our team. The reconstructed scenes were quantitatively evaluated using the same metrics adopted in the original paper.
 
@@ -8,9 +12,11 @@ This project was developed as part of the Computer Graphics course and aims to r
 
 ## Original Paper
 
-> Antoine Guédon and Vincent Lepetit.
-> **SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering.**
-> Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024.
+Guédon, A., & Lepetit, V.
+
+**SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering**
+
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024.
 
 📄 Paper:
 https://arxiv.org/abs/2311.12775
@@ -72,9 +78,9 @@ The adopted workflow is summarized below:
 .
 ├── docs/
 ├── images/
-├── notebooks/
+├── notebooks/ # Google Colab notebooks
 ├── paper/
-├── results/
+├── results/ # Generated meshes and checkpoints
 ├── LICENSE
 └── README.md
 ```
@@ -115,6 +121,7 @@ The experiments were executed using:
 - SuGaR
 - 3D Gaussian Splatting
 - Instant-NGP
+- Python 3.10
 
 ---
 
@@ -133,6 +140,8 @@ The reconstruction quality was evaluated using the same metrics adopted by the o
 The qualitative analysis demonstrated that SuGaR successfully reconstructed the evaluated urban monuments while enabling mesh extraction from Gaussian representations.
 
 Quantitative comparisons were performed against 3D Gaussian Splatting and Instant-NGP using PSNR, SSIM and LPIPS.
+
+The experiments confirmed that the reconstruction quality strongly depends on image coverage. Objects with missing upper viewpoints presented incomplete meshes, while the cannon, which had better image coverage, produced the most complete reconstruction.
 
 ---
 
@@ -153,4 +162,10 @@ If you use this repository, please also cite the original SuGaR paper.
 
 ## Authors
 
-Developed by the project team as part of the Computer Graphics course.
+## Authors
+
+This repository was developed by the project team for the Computer Graphics course at the Federal University of Maranhão (UFMA).
+
+## Acknowledgements
+
+We thank the authors of the original SuGaR paper for making their implementation publicly available, enabling this academic reproduction.
