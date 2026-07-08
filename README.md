@@ -8,12 +8,20 @@ This project was developed as part of the Computer Graphics course and aims to r
 
 ## Original Paper
 
-**SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering**
+> Antoine Guédon and Vincent Lepetit.
+> **SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering.**
+> Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024.
 
-CVPR 2024
+📄 Paper:
+https://arxiv.org/abs/2311.12775
 
-Official repository:
+💻 Official implementation:
 https://github.com/Anttwo/SuGaR
+
+---
+
+This work **is not the original implementation**.
+It is an academic reproduction developed using a custom dataset of urban monuments and objects for educational and research purposes.
 
 ---
 
